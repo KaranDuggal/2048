@@ -10,15 +10,12 @@ void main() async {
   if (Platform.isWindows || Platform.isLinux) {
     WindowManager.instance.setMinimumSize(const Size(400, 700));
     WindowManager.instance.setMaximumSize(const Size(400, 700));
-    WindowManager.instance.isResizable();
   }
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
