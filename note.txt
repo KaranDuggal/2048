@@ -4,6 +4,12 @@ flutter clean && flutter pub get
 
 flutter clean && flutter pub get && flutter pub run flutter_native_splash:create
 
+flutter clean && flutter pub get && flutter pub run flutter_launcher_icons
+
+flutter pub global run rename --appname yourappname
+
+flutter pub global run rename --bundleId com.indoLinuxTech.2048
+
 /snap/android-studio/125/android-studio/jre/bin/keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 
 Internet Access :- Add this to file android/app/src/main/AndroidManifest.xml after the package name:

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:game1/home.dart';
+import 'package:game_2048/home.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() async {
