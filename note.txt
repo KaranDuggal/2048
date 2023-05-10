@@ -1,4 +1,4 @@
-flutter clean && flutter build apk --build-name=1.0.3 --build-number=3
+flutter clean && flutter build apk --build-name=1.0.1 --build-number=1
 flutter clean && flutter build appbundle
 flutter clean && flutter pub get
 
@@ -8,7 +8,7 @@ flutter clean && flutter pub get && flutter pub run flutter_launcher_icons
 
 flutter pub global run rename --appname yourappname
 
-flutter pub global run rename --bundleId com.indoLinuxTech.2048
+flutter pub global run rename --bundleId com.indoLinuxTech.game_2048
 
 /snap/android-studio/125/android-studio/jre/bin/keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 
@@ -16,6 +16,5 @@ Internet Access :- Add this to file android/app/src/main/AndroidManifest.xml aft
 <uses-permission android:name="android.permission.INTERNET"/> 
 
 merge android/developement into main :- ./scripts/merge_android_developement_into_main.sh
-Not working Category musicals and threshes, Art, Gadget
 
 for getting SHA1 key :-/snap/android-studio/125/android-studio/jre/bin/keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
