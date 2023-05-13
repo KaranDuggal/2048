@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:game_2048/home.dart';
 import 'package:window_manager/window_manager.dart';
 
@@ -11,6 +12,10 @@ void main() async {
     WindowManager.instance.setMinimumSize(const Size(400, 700));
     WindowManager.instance.setMaximumSize(const Size(400, 700));
   }
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown
+  ]);
   runApp(const MyApp());
 }
 
